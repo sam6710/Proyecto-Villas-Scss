@@ -1,0 +1,31 @@
+#tipos_casas{
+    @include flexposition($justifycontent:space-evenly);
+    height: 30vh;
+}
+.tipo{
+    height: 100%;
+    width: 20%;
+    margin-top: 2rem;
+}
+.tipo a{
+    @include flexposition($justifycontent:center, $alignitems:center);
+    margin-top: 4.4rem;
+}
+.tipo i{
+    font-size: 1.6rem;
+}
+.tipo:hover{
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    @include hover_scale();
+}
+.tipo:not(:hover){
+    @include not_hover_scale();
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}

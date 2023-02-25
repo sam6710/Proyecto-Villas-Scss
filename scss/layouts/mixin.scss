@@ -1,0 +1,49 @@
+@mixin flexposition($direction:row, $justifycontent:space-around, $alignitems:center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifycontent;
+    align-items: $alignitems;
+}
+
+@mixin hover_scale($scale:1.2){
+    scale: $scale;
+    transition: scale 1s;
+}
+
+@mixin hover_shadow(){
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 16px;
+    transition: box-shadow 1s;
+}
+
+@mixin not_hover_scale(){
+    scale: 1;
+    transition: scale 1s;
+}
+
+@mixin not_hover_shadow(){
+    box-shadow: 0;
+    transition: box-shadow 1s;
+}
+
+@mixin response($breakpoint){
+    @if($breakpoint == xl){
+        @media(max-widht: 1200px){
+            @content;
+        }
+    }
+    @if($breakpoint == lg){
+        @media(max-widht: 992px){
+            @content;
+        }
+    }
+    @if($breakpoint == md){
+        @media(max-widht: 768px){
+            @content;
+        }
+    }
+    @if($breakpoint == sm){
+        @media(max-widht: 576px){
+            @content;
+        }
+    }
+}
