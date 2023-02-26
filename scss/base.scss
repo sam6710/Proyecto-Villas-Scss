@@ -9,15 +9,18 @@
     padding: 0;
 }
 html{
+    @include response(lg){
+        font-size: 63.5%;
+    }
+
     @include response(md){
-        font-size: 56.25%;
+        font-size: 60.25%;
     }
 
     @include response(sm){
-        font-size: 50%;
+        font-size: 55%;
     }
 }
-
 
 ///Tipos de letras
 body{

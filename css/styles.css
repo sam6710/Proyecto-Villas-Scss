@@ -8391,13 +8391,17 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0; }
 
-@media (max-widht: 768px) {
+@media (max-width: 992px) {
   html {
-    font-size: 56.25%; } }
+    font-size: 63.5%; } }
 
-@media (max-widht: 576px) {
+@media (max-width: 768px) {
   html {
-    font-size: 50%; } }
+    font-size: 60.25%; } }
+
+@media (max-width: 576px) {
+  html {
+    font-size: 55%; } }
 
 body {
   font-family: 'Roboto Slab', serif; }
@@ -8592,15 +8596,15 @@ hr {
 #pre-footer {
   height: 50vh;
   text-align: center;
-  color: white;
+  color: black;
   padding-top: 2rem;
-  background-image: url(../../imagenes/villlas/familia/villa_concreta/img_section-prefooter.avif);
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 2rem; }
 
 #pre-footer p {
-  padding-top: 0.4rem; }
+  padding-top: 0.4rem;
+  z-index: 1; }
 
 #pre-footer button {
   background-color: wheat;

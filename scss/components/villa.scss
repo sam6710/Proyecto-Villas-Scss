@@ -53,15 +53,16 @@
 #pre-footer{
     height: 50vh;
     text-align: center;
-    color: color(blanco);
+    color: color(negro);
     padding-top: 2rem;
-    background-image: url(../../imagenes/villlas/familia/villa_concreta/img_section-prefooter.avif);
+    // background-image: url(../../imagenes/villlas/familia/villa_concreta/img_section-prefooter.avif);
     background-repeat: no-repeat;
     background-size:contain;
     margin-top: 2rem;
 }
 #pre-footer p{
     padding-top: 0.4rem;
+    z-index: 1;
 }
 #pre-footer button{
     background-color: color(beigee);
@@ -70,6 +71,12 @@
     padding: 0.2rem 2rem 0.2rem 2rem;
     margin-top: 1rem;
 }
+// #pre-footer img{
+//     position: absolute;
+//     top: 105rem;
+//     right: 0rem,;
+//     z-index: -1;
+// }
 .estrella{
     height: 1rem;
 }

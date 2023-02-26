@@ -60,22 +60,22 @@
 
 @mixin response($breakpoint){
     @if($breakpoint == xl){
-        @media(max-widht: 1200px){
+        @media(max-width: 1200px){
             @content;
         }
     }
     @if($breakpoint == lg){
-        @media(max-widht: 992px){
+        @media(max-width: 992px){
             @content;
         }
     }
     @if($breakpoint == md){
-        @media(max-widht: 768px){
+        @media(max-width:768px){
             @content;
         }
     }
     @if($breakpoint == sm){
-        @media(max-widht: 576px){
+        @media(max-width: 576px){
             @content;
         }
     }
