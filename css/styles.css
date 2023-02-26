@@ -8391,18 +8391,35 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0; }
 
+@media (max-widht: 768px) {
+  html {
+    font-size: 56.25%; } }
+
+@media (max-widht: 576px) {
+  html {
+    font-size: 50%; } }
+
+body {
+  font-family: 'Roboto Slab', serif; }
+
+nav {
+  font-family: 'Oswald', sans-serif; }
+
 #logo {
   width: 60px;
   height: 60px; }
-
-nav a {
-  font-family: "Oswald", sans-serif; }
 
 .nav-item > a {
   margin-left: 1.6rem; }
 
 .dropdown-item:active {
   background-color: black; }
+
+footer {
+  margin-top: 1rem; }
+
+.footer_hr {
+  margin-top: 1rem; }
 
 #tipos_casas {
   display: flex;
@@ -8412,6 +8429,8 @@ nav a {
   height: 30vh; }
 
 .tipo {
+  display: flex;
+  justify-content: center;
   height: 100%;
   width: 20%;
   margin-top: 2rem; }
@@ -8420,8 +8439,7 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin-top: 4.4rem; }
+  align-items: center; }
 
 .tipo i {
   font-size: 1.6rem; }
@@ -8443,18 +8461,12 @@ a {
 a:hover {
   color: black; }
 
-footer {
-  margin-top: 1rem; }
-
-.footer_hr {
-  margin-top: 2rem; }
-
 #villas {
   margin-top: 2rem;
   margin-bottom: 4rem; }
 
 #villas h2, #villas .h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   text-align: center; }
 
 #villas_villas {
@@ -8469,7 +8481,9 @@ footer {
   margin-right: 10%; }
 
 .card_villa {
-  text-align: center; }
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 .card_villa:hover {
   scale: 1.2;
@@ -8512,6 +8526,18 @@ hr {
   margin-left: 8%;
   color: gray; }
 
+.valoración_card img {
+  width: 1rem; }
+
+.prestaciones i {
+  margin-right: 0.2rem; }
+
+.info_card_villas {
+  display: flex;
+  flex-direction: none;
+  justify-content: space-evenly;
+  align-items: center; }
+
 .informacion_villa {
   display: flex; }
 
@@ -8534,7 +8560,8 @@ hr {
   grid-area: 3 / 1 / 4 / 3; }
 
 #precio {
-  grid-area: 1 / 3 / 4 / 5; }
+  grid-area: 1 / 3 / 4 / 5;
+  margin-top: 1.2rem; }
 
 #toda_info {
   grid-area: 4 / 1 / 5 / 5; }
@@ -8543,7 +8570,24 @@ hr {
   width: 35%;
   margin: 2rem;
   padding: 0.8rem;
-  background-color: wheat; }
+  background-color: rgba(190, 190, 190, 0.4);
+  display: flex;
+  flex-direction: column; }
+
+.opciones button {
+  margin: 0.2rem 1.2rem 1rem 1.2rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: goldenrod;
+  padding: 0.4rem 0rem 0.4rem 0rem;
+  color: white; }
+
+.opciones button a {
+  color: white; }
+
+.opciones div {
+  margin-left: 2rem;
+  padding-top: 2rem; }
 
 #pre-footer {
   height: 50vh;
@@ -8564,3 +8608,51 @@ hr {
   border: none;
   padding: 0.2rem 2rem 0.2rem 2rem;
   margin-top: 1rem; }
+
+.estrella {
+  height: 1rem; }
+
+#testimonios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem; }
+
+.testimonio_card {
+  padding: 1.2rem;
+  border: 1px solid wheat;
+  border-radius: 0.2rem;
+  width: 35%;
+  height: 30vh; }
+
+.testimonio_card p {
+  padding: 1rem; }
+
+.testimonio_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 16px;
+  transition: box-shadow 1s; }
+
+.testimonio_card:not(:hover) {
+  box-shadow: 0;
+  transition: box-shadow 1s; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem; }
+
+input, textarea {
+  border-radius: 0.4rem;
+  border-color: goldenrod;
+  display: block;
+  padding: 0.35rem 0.75rem; }
+
+form button {
+  background-color: wheat;
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.2rem; }

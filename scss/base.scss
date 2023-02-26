@@ -1,0 +1,28 @@
+///Imports de fonts
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); 
+
+
+///Inicialización a 0 del margin y padding
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    @include response(md){
+        font-size: 56.25%;
+    }
+
+    @include response(sm){
+        font-size: 50%;
+    }
+}
+
+
+///Tipos de letras
+body{
+    font-family: 'Roboto Slab', serif;
+}
+nav{
+    font-family: 'Oswald', sans-serif;
+}

@@ -1,0 +1,27 @@
+////Proyecto: Sass-Villas
+/// @author Samuel Gómez Pérez
+
+
+///Conjunto de colores
+/// /// @group colores
+$colores:(
+    "blanco": white,
+    "negro": black,
+    "beigee": wheat,
+    "gris-medio": rgba(190, 190, 190, 0.4),
+    "golden": goldenrod,
+    "gris-claro": #f5f5f5,
+    "gris": gray,
+);
+
+
+/// Función que devuelve un color del conjunto $colores
+/// @group colores
+/// @param {string} $color - nombre del color del conjunto $colores
+/// @return {color} - color
+@function color($color){
+    @return map-get($colores, $color)
+};
+@function color($color){
+    @return map-get($colores, $color)
+};

@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villa Familiar</title>
+    <title>Villa</title>
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0c06a27afa.js" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #ffffff;">
@@ -23,10 +26,10 @@
                 <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Casas</a>
+                <a class="nav-link active" href="./Villas.html">Casas</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="./Villas.html">Familia</a></li>
                   <li><a class="dropdown-item" href="./Villas.html">Lujo</a></li>
@@ -37,7 +40,7 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
     <div>
         <div id="carrousel">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -78,23 +81,46 @@
         <div class="informacion_villa">
             <div class="info">
                 <div id="nombre"><h3>ADA</h3></div>
-                <div id="valoración">5 Estrellas</div>
+                <div id="valoración">
+                  <img class="estrella" src="../imagenes/villlas/familia/villa_concreta/2451996-ff9800.png" alt="estrella valoración">
+                  <img class="estrella" src="../imagenes/villlas/familia/villa_concreta/2451996-ff9800.png" alt="estrella valoración">
+                  <img class="estrella" src="../imagenes/villlas/familia/villa_concreta/2451996-ff9800.png" alt="estrella valoración">
+                  <img class="estrella" src="../imagenes/villlas/familia/villa_concreta/2451996-ff9800.png" alt="estrella valoración">
+                </div>
                 <div id="capacidad"><i class="fa fa-user"></i> 8-14 Personas</div>
                 <div id="precio">
                     <p>Villa Familiar</p>
                     <p>De 8.900€ a 16.300€/semana</p>
                 </div>
                 <div class="toda_info">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum corporis, ducimus esse sunt culpa quo excepturi voluptas ab porro ut beatae. Et atque dolor corrupti iusto dignissimos doloremque, quia repudiandae rerum rem. Voluptatibus libero velit nisi quo vitae excepturi suscipit. Voluptatibus, soluta illum. Excepturi aspernatur enim voluptatum cum sed! Similique.</p>
+                    <p>Villa Ada is one of our 5-star luxury holiday villas available for weekly rentals on the border of Tuscany and Umbria that has received top rated guests’ reviews. A large, high-end family villa, perfect for tennis and golf lovers, with a commanding panoramic view over the tranquil rolling countryside, villa Ada is the ideal spot for all those seeking an authentic and genuine Italian vacation. Only a stone's throw from the Tuscan border, it peers down over the famous landscape from its perch on the top of a hill, offering luxury in an exceptional setting.
+                      It comprises a large stone farmhouse (main villa) and its annex (guest house) just 40 metres away. Each house has its own driveway and parking area.
+                      The swimming pool is situated on a raised terrace next to the villa, enjoying spectacular views of the surrounding countryside. A pretty pergola alongside it offers welcome shade in the heat, as well as a table so you can enjoy a drink whilst watching the sun setting over the dramatic scenery. A shared hard tennis court located in a private holiday hamlet can be used by villa Ada guests, only three minutes away by car.
+                      Set in a large garden, the main villa has an attractive pergola entwined in climbing roses, shading a large dining table that can comfortably accommodate 14 people. With stunning views and a superbly peaceful location, it makes for a very inviting place to dine. There is also a well-equipped BBQ, and several comfortable sun-loungers dotted about the garden to allow you to unwind and soak up the delightful atmosphere.</p>
                 </div>
             </div>
-            <div class="opciones">Cosas</div>
+            <div class="opciones">
+              <button><i class="fa-regular fa-heart"></i> Favoritos</button>
+              <button><a href="./reserva.html">Reservar</a></button>
+              <div>
+                <h5>WHAT WE LOVE ABOUT ADA</h5>
+                <ul>
+                  <li>Air conditioned villa</li>
+                  <li>Privacy of two separate houses</li>
+                  <li>Beautifully landscaped gardens with pergolas for al fresco dining</li>
+                  <li>Superb panoramic country setting yet close to amenities</li>
+                  <li>Convenient location for touring both Tuscany and Umbria</li>
+                  <li>Access to tennis court nearby</li>
+                </ul>
+              </div>
+            </div>
         </div>
     </div>
     <div id="pre-footer">
         <h2>Sammy´s Villas</h2>
         <p>“Unlimited collection, your dream villa in the Carribean is here”</p>
-        <button>Home</button>
+        <!-- <img src="../imagenes/villlas/familia/villa_concreta/img_section-prefooter.avif" alt=""> -->
+        <button><a href="../index.html">Home</a></button>
     </div>
     <hr class="footer_hr">
     <footer class="text-center text-lg-start text-black" style="background-color: #ffffff">

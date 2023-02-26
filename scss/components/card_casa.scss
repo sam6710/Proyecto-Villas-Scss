@@ -1,9 +1,10 @@
+///Componente Card_casas
 #villas{
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
 #villas h2{
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 #villas_villas{
@@ -19,6 +20,8 @@
 }
 .card_villa{
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .card_villa:hover{
     @include hover_scale();
@@ -55,5 +58,14 @@
 hr{
     width: 84%;
     margin-left: 8%;
-    color: gray;
+    color: color(gris);
+}
+.valoración_card img{
+    width: 1rem;
+}
+.prestaciones i{
+    margin-right: 0.2rem;
+}
+.info_card_villas{
+    @include flexposition(none, space-evenly);
 }

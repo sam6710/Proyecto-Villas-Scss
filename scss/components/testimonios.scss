@@ -1,0 +1,21 @@
+///Componente testimonios
+#testimonios{
+    @include flexposition;
+    margin-top: 3rem;
+}
+.testimonio_card{
+    padding: 1.2rem;
+    border: 1px solid wheat;
+    border-radius: 0.2rem;
+    width: 35%;
+    height: 30vh;
+}
+.testimonio_card p{
+    padding: 1rem;
+}
+.testimonio_card:hover{
+    @include hover_shadow();
+}
+.testimonio_card:not(:hover){
+    @include not_hover_shadow();
+}
